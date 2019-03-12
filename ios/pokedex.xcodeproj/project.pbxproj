@@ -58,6 +58,8 @@
 		577DA3F66D484560AD6ECC47 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 683A5C6393F04EAFB2EFA6F9 /* Zocial.ttf */; };
 		320C2D21CA89420B8806517E /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D123C83CF7A434B93E31C78 /* libRNGestureHandler.a */; };
 		AB2F3BCCB6D74DC09874BA40 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF429464C234A4CA66A1E23 /* libRNGestureHandler-tvOS.a */; };
+		E367484584C6438ABDE2E60F /* Pokemon Hollow Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2C9BE6EA4AB45D0915CEA7C /* Pokemon Hollow Normal.ttf */; };
+		6E3C409E7FE148259D3C73D1 /* Pokemon Solid Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D48D3D1C4BE642BD9941A4AF /* Pokemon Solid Normal.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,6 +388,8 @@
 		AE318F757F784B969F5916A0 /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		4D123C83CF7A434B93E31C78 /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		FAF429464C234A4CA66A1E23 /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C2C9BE6EA4AB45D0915CEA7C /* Pokemon Hollow Normal.ttf */ = {isa = PBXFileReference; name = "Pokemon Hollow Normal.ttf"; path = "../assets/fonts/Pokemon Hollow Normal.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D48D3D1C4BE642BD9941A4AF /* Pokemon Solid Normal.ttf */ = {isa = PBXFileReference; name = "Pokemon Solid Normal.ttf"; path = "../assets/fonts/Pokemon Solid Normal.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,6 +679,8 @@
 				25995E43184242299AB04947 /* Octicons.ttf */,
 				44026599544349848A11ADA1 /* SimpleLineIcons.ttf */,
 				683A5C6393F04EAFB2EFA6F9 /* Zocial.ttf */,
+				C2C9BE6EA4AB45D0915CEA7C /* Pokemon Hollow Normal.ttf */,
+				D48D3D1C4BE642BD9941A4AF /* Pokemon Solid Normal.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1141,6 +1147,8 @@
 				D9323FECCC98465DAEB9C8FF /* Octicons.ttf in Resources */,
 				9163CA27CF3D4CC2B28087CC /* SimpleLineIcons.ttf in Resources */,
 				577DA3F66D484560AD6ECC47 /* Zocial.ttf in Resources */,
+				E367484584C6438ABDE2E60F /* Pokemon Hollow Normal.ttf in Resources */,
+				6E3C409E7FE148259D3C73D1 /* Pokemon Solid Normal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
