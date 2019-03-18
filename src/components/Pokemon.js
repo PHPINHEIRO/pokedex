@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-
-import { View, Text, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
-import { Card, Avatar } from 'react-native-elements';
+import { View, FlatList, StyleSheet, ActivityIndicator } from 'react-native';
 import axios from 'axios'
+import PokeCard from './PokeCard';
 
 
 export default class Pokemon extends Component {
@@ -51,24 +50,7 @@ export default class Pokemon extends Component {
   };
 
   renderItem = ({ item }) => (
-   <View>
-        <Card title={item.name}
-          containerStyle={styles.card}
-          titleStyle={{fontSize:10}}
-          >
-          <View style={{alignItems:'center'}}>
-            <Avatar
-              rounded
-              size='medium'
-              overlayContainerStyle={{backgroundColor: '#A5D6A7'}}
-              source={{
-                uri:
-                  'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
-              }}
-            />
-          </View>
-        </Card>
-      </View>
+   <PokeCard name={item.name} url={item.url}></PokeCard>
   );
 
   render() {
@@ -97,11 +79,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginVertical: 10,
   },
-  card: {
-    width: 90,
-    height: 120,
-    justifyContent: 'center',
-    borderRadius: 10,
-    backgroundColor:'#66BB6A'
-  }
 });
+
+// ideia: criar um componente PokeCard passar via props item.url e item.name,
+// dentro do componente fazer a requisicao da url para pegar ID,sprite,...
