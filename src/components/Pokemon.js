@@ -80,6 +80,3 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 });
-
-// ideia: criar um componente PokeCard passar via props item.url e item.name,
-// dentro do componente fazer a requisicao da url para pegar ID,sprite,...

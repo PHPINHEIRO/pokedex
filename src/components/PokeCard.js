@@ -1,20 +1,24 @@
 import React, { Component } from 'react'
 import { StyleSheet, View, } from 'react-native'
 import { Card, Avatar } from 'react-native-elements';
-import axios from 'axios';
+
 
 
 export default class PokeCard extends Component {
 
-    state={
-        data:[]
+    state = {
+        data: [],
+        pokeIndex: '',
+        spriteUrl: '1',
     }
 
-    async componentDidMount(){
-        const response = await axios.get(this.props.url)
-        const results = await response.data
-        this.setState({data:results})
-        console.log(this.state.data)
+    async componentDidMount() {
+        const pokeID = await this.props.url.split('/')[this.props.url.split('/').length - 2]
+        const spriteUrl = await `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeID}.png`
+        this.setState({
+            pokeIndex: pokeID,
+            spriteUrl: spriteUrl
+        })
     }
 
     render() {
@@ -29,10 +33,7 @@ export default class PokeCard extends Component {
                             rounded
                             size='medium'
                             overlayContainerStyle={{ backgroundColor: '#A5D6A7' }}
-                            source={{
-                                uri:
-                                    'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png',
-                            }}
+                            source={{ uri: this.state.spriteUrl }}
                         />
                     </View>
                 </Card>
